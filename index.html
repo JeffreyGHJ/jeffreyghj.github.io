@@ -7,15 +7,7 @@
 
   <script>
     // Paste the index.js router script here
-    (function () {
-      var s = new URLSearchParams(window.location.search);
-      var p = s.get('p');
-      if (p) {
-        var q = s.get('q');
-        var url = p + (q ? ('?' + q) : '') + window.location.hash;
-        history.replaceState(null, '', url);
-      }
-    })();
+
   </script>
 </body>
 </html>
