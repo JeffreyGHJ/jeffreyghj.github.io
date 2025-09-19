@@ -10,7 +10,7 @@ var l = window.location;
   // Set this:
   // - 0 for a user/org site: https://username.github.io
   // - 1 for a project site:   https://username.github.io/repo-name
-  var segmentsToKeep = 1; // change to 0 if you’re on a user/org site or custom domain
+  var segmentsToKeep = 0; // change to 0 if you’re on a user/org site or custom domain
 
   var base = l.protocol + '//' + l.host +
              l.pathname.split('/').slice(0, 1 + segmentsToKeep).join('/') + '/';
